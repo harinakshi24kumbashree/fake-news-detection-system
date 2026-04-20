@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake News Detection</title>
+</head>
+<body style="
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+">
+
+<div style="
+    width:450px;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,0.3);
+">
+
+    <h2 style="color:#333;">Fake News Detection</h2>
+    <p style="color:#666;">Check whether news is Real or Fake</p>
+
+    <form method="post">
+        <textarea name="news" rows="6" required
+        placeholder="Paste news text here..."
+        style="width:100%;padding:10px;border-radius:6px;border:1px solid #ccc;"></textarea>
+
+        <button type="submit"
+        style="width:100%;padding:10px;margin-top:15px;
+        background:linear-gradient(90deg,#667eea,#764ba2);
+        color:white;border:none;border-radius:6px;cursor:pointer;">
+        Analyze News
+        </button>
+    </form>
+
+    {% if prediction %}
+        <h3 style="margin-top:20px;">{{ prediction }}</h3>
+    {% endif %}
+
+    <br>
+    <a href="/logout" style="color:#764ba2;font-weight:bold;text-decoration:none;">
+        Logout
+    </a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+body {
+    font-family: Arial;
+    background: #007bff;
+}
+
+.box {
+    width: 400px;
+    margin: 100px auto;
+    background: gray;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: gray;
+    border: none;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+}
